@@ -1,49 +1,203 @@
+:root {
+    --accent-color: #2196F3;
+    --main-font: "Roboto", sans-serif;
+    --secondary-font: "Raleway", sans-serif;
+    --color-text-grey: #757575;
+    --color-text-title: #212121;
+
+} 
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--main-font); 
 }
 
+.list {
+    list-style: none;
+}   
+.link {
+    text-decoration: none;
+}
+.address {
+    font-style: normal;
+}
+/* =================> NAVIGATION <=================== */
+.navigation-list-link {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.143;
+letter-spacing: 0.02em;
+color: var(--color-text-title);
+}
+.header-address-link, .header-address-link {
+font-weight: 500;
+font-size: 14px;
+line-height: 1.143;
+letter-spacing: 0.02em;
+color: var(--color-text-grey)
+}
+.navigation-list-link:hover, 
+.navigation-list-link:focus, 
+.header-address-link:hover,
+.header-address-link:focus {
+    color: var(--accent-color);
+}
+/* =================> END NAVIGATION <================ */
+
+/* =================> BUTTON STYLE Studio<================ */
+.modal-btn {
+font-weight: 700;
+font-size: 16px;
+line-height: 1.875;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+color: #FFFFFF;
+background: var(--accent-color);
+}
+/* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
+/* border-radius: 4px; */
+
+/* =================> END BUTTON STYLE Studio <================ */
+
+/* =================> PORTFOLIO BUTTON STYLE <================ */   
+.portfolio-modal-btn {
+font-weight: 500;
+font-size: 16px;
+line-height: 1.625;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--color-text-title);
+}
+.portfolio-modal-btn:hover, .header-address-link:focus {
+color: #FFFFFF;
+background: var(--accent-color);
+}
+/* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12); */
+/* border-radius: 4px;
+
+/* =================> END PORTFOLIO BUTTON STYLE <================ */
+
+/* =================> PORTFOLIO FONT STYLE <================ */
+.portfolio-item > h2 {
+font-weight: 700;
+font-size: 18px;
+line-height: 2;
+letter-spacing: 0.06em;
+color: var(--color-text-title);
+}
+.portfolio-item > p {
+font-weight: 400;
+font-size: 16px;
+line-height: 1.875px;
+letter-spacing: 0.03em;
+color: var(--color-text-grey)
+}
+/* =================> END PORTFOLIO FONT STYLE <================ */
+
+/* =================> WE DOING <================ */
+.we-doing > h3 {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.166;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--color-text-title);
+}
+
+
+/* =================> END WE DOING <================ */
+
+/* =================> FEATURES FONT STYLE <================ */
+
+.features-list-item > h3 {
+
+font-weight: 700;
+font-size: 14px;
+line-height: 1.143;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+color: var(--color-text-title)
+}
+.features-list-item > p {
+font-weight: 400;
+font-size: 14px;
+line-height: 2;
+letter-spacing: 0.03em;
+color: var(--color-text-grey)
+}
+/* =================> END FEATURES FONT STYLE <================ */
+
+/* =================> TEAM FONT STYLE <================ */
+.team > h2 {
+font-weight: 700;
+font-size: 36px;
+line-height: 1.166;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--color-text-title)
+}
+.team-list-item > h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.188;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-text-title);
+    }
+    
+    .team-list-item > p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.188px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--color-text-grey)
+    }
+/* =================> END TEAM FONT STYLE <================ */
+
+/* =================> Logo WebStudio <================ */
 .logo {
-    font-family: 'Raleway', sans-serif;
-    left: 215px;
-    top: 24px;
+    font-family: var(--secondary-font);
     font-size: 26px;
     line-height: 1.19;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0.03em;
     color: #000000;
-    
-
 }
 .logo-color {
     color: #2196F3;
 }
+/* =================> END Logo WebStudio <================ */
 
-letter-spacing: 0.03em;
-}
+/* =================> TITLE STYLE STUDIO<================ */
 .hero-title {
     text-align: center;
     text-transform: uppercase;
-    color: white;
-   
+    letter-spacing: 0.03em;
+    font-size: 46px;
+    line-height: 1.364;
+    /* color: #FFFFFF; */
 }
- header {
-     background-color: #2F303A;
- }
-    .b {
-        background-color: white;
+/* =================> END TITLE STYLE STUDIO<================ */
+
+/* =================> FOOTER STYLE <================ */
+.footer {
+    background: #2F303A;
+}
+.footer-mail-link, .footer-tel-link {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
     }
-    
-
+.footer-map-link {
+        font-style: normal;
+        font-size: 14px;
+        line-height: 1.714;
+        letter-spacing: 0.03em;
+        color: #FFFFFF;
 }
-
-/*
-Селектор тега " < h1...> "
-класса   " . "
-id       " # " - должжен быть уникальным на странице
-атрибута " [] " - [href= "https://google.com"]
-потомка  "  " - пробел
-ребенка
-Сестринский " .list-item + .list-item " - тогда к примеру список их 4рех Li, три будут красные
-*/
-
-/* сбрасывает все фильтры. Или просто делает все елементы розовым. Универсальный селектор. *{
-    color: red;
-} */
+ /* =================> END FOOTER STYLE <================ */
