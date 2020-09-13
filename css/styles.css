@@ -1,4 +1,49 @@
 body {
-    background-color: teal;
-    color: #fff;
+    font-family: 'Roboto', sans-serif;
 }
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    left: 215px;
+    top: 24px;
+    font-size: 26px;
+    line-height: 1.19;
+    color: #000000;
+    
+
+}
+.logo-color {
+    color: #2196F3;
+}
+
+letter-spacing: 0.03em;
+}
+.hero-title {
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+   
+}
+ header {
+     background-color: #2F303A;
+ }
+    .b {
+        background-color: white;
+    }
+    
+
+}
+
+/*
+Селектор тега " < h1...> "
+класса   " . "
+id       " # " - должжен быть уникальным на странице
+атрибута " [] " - [href= "https://google.com"]
+потомка  "  " - пробел
+ребенка
+Сестринский " .list-item + .list-item " - тогда к примеру список их 4рех Li, три будут красные
+*/
+
+/* сбрасывает все фильтры. Или просто делает все елементы розовым. Универсальный селектор. *{
+    color: red;
+} */
