@@ -36,11 +36,15 @@ letter-spacing: 0.02em;
 color: var(--color-text-grey)
 }
 .navigation-list-link:hover, 
-.navigation-list-link:focus, 
+.navigation-list-link:focus,
+.navigation-list-link:active, 
 .header-address-link:hover,
-.header-address-link:focus {
+.header-address-link:focus
+/* .header-address-link:active */
+{
     color: var(--accent-color);
 }
+
 /* =================> END NAVIGATION <================ */
 
 /* =================> BUTTON STYLE Studio<================ */
@@ -48,20 +52,17 @@ color: var(--color-text-grey)
 font-weight: 700;
 font-size: 16px;
 line-height: 1.875;
-display: flex;
-align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
 color: #FFFFFF;
 background: var(--accent-color);
 }
-/* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
-/* border-radius: 4px; */
-
 /* =================> END BUTTON STYLE Studio <================ */
 
 /* =================> PORTFOLIO BUTTON STYLE <================ */   
 .portfolio-modal-btn {
+font-family: var(--main-font);
+font-style: normal;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.625;
@@ -69,27 +70,24 @@ text-align: center;
 letter-spacing: 0.03em;
 color: var(--color-text-title);
 }
-.portfolio-modal-btn:hover, .header-address-link:focus {
+.portfolio-modal-btn:hover, .portfolio-modal-btn:focus, .portfolio-modal-btn:active {
 color: #FFFFFF;
 background: var(--accent-color);
 }
-/* box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12); */
-/* border-radius: 4px;
-
 /* =================> END PORTFOLIO BUTTON STYLE <================ */
 
 /* =================> PORTFOLIO FONT STYLE <================ */
-.portfolio-item > h2 {
+.portfolio-item > a > h2 {
 font-weight: 700;
 font-size: 18px;
 line-height: 2;
 letter-spacing: 0.06em;
 color: var(--color-text-title);
 }
-.portfolio-item > p {
+.portfolio-item > a > p {
 font-weight: 400;
 font-size: 16px;
-line-height: 1.875px;
+line-height: 1.875;
 letter-spacing: 0.03em;
 color: var(--color-text-grey)
 }
@@ -135,22 +133,21 @@ font-size: 36px;
 line-height: 1.166;
 text-align: center;
 letter-spacing: 0.03em;
-color: var(--color-text-title)
+color: var(--color-text-title);
 }
-.team-list-item > h3 {
+.team-list-item > a > h3 {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.188;
-    text-align: center;
+    /* text-align: center; */
     letter-spacing: 0.03em;
     color: var(--color-text-title);
     }
-    
-    .team-list-item > p {
+    .team-list-item > a > p {
     font-weight: 400;
     font-size: 16px;
-    line-height: 1.188px;
-    text-align: center;
+    line-height: 1.188;
+    /* text-align: center; */
     letter-spacing: 0.03em;
     color: var(--color-text-grey)
     }
@@ -175,19 +172,24 @@ color: var(--color-text-title)
 .hero-title {
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: 0.03em;
-    font-size: 46px;
+    font-size: 44px;
     line-height: 1.364;
     /* color: #FFFFFF; */
+    font-weight: 900;
+    letter-spacing: 0.06em;
 }
 /* =================> END TITLE STYLE STUDIO<================ */
 
 /* =================> FOOTER STYLE <================ */
 .footer {
+
+
     background: #2F303A;
+    
+    
 }
 .footer-mail-link, .footer-tel-link {
-    font-style: normal;
+    
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
