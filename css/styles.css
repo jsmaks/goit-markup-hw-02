@@ -37,7 +37,7 @@ color: var(--color-text-grey)
 }
 .navigation-list-link:hover, 
 .navigation-list-link:focus,
-.navigation-list-link:active, 
+/* .navigation-list-link:active,  */
 .header-address-link:hover,
 .header-address-link:focus
 /* .header-address-link:active */
